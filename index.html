@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav class="desktop_nav">
+        <div class="nav_logo">design Co</div>
+        <ul class="nav_links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger_nav">
+        <div class="nav_logo">design Co</div>
+        <div class="hamburger_menu">
+            <div class="hamburger_icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hamburger_menulinks" onclick="toggleMenu">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container" style="display: flex; justify-content: center; align-items: center; background-color: rgb(73, 73, 70); border-radius: 50%; width: 350px; height: 350px; padding: 1em;">
+            <img src="assets/images/a1.jpg" style="border-radius: 50%; width: 100%; height: 100%; object-fit: cover; object-position: top center;">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Collins</h1>
+            <p class="section__text__p2">Front-end Developer</p>
+            <div class="btn_container">
+                <button class="btn btn_color_2" onclick="window.open('./assets/CARLOS.pdf')">Download CV</button>
+                <button class="btn btn_color_1" 
+                onclick="location.href='./#contact'">
+                Contact Info</button>
+            </div>
+            <div id="socials_container">
+                <img src="./assets/logos/in.png" 
+                alt="linked-in-profile" class="icon" 
+                onclick="location.href='https://instagram.com/designwithco7/'"
+                />
+                <img src="./assets/logos/git.png" 
+                alt="github-profile" class="icon" 
+                onclick="location.href='https://github.com/collinsstevo79-code/'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1" style="text-align: center;">Get to know more</p>
+        <h1 style="text-align: center;">About Me</h1>
+        <div class="section_container">
+            <div class="section_container_pics">
+                <img src="./assets/images/a8.jpg" style="width: 350px; height: 290px ; border-radius: 10%;  object-fit: cover; object-position: bottom center;"
+                alt="profile pic" class="about_pic"
+                />
+            </div>
+            <div class="about_details_container">
+                <div class="about_container">
+                    <div class="details_container">
+                        <img src="./assets/logos/exp.png"
+                        alt="experience-icon" class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>2+ years
+                            <br>Frontend Development
+                        </p>
+                    </div>
+                    <div class="details_container">
+                        <img src="./assets/logos/edu.png"
+                        alt="experience-icon" class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Bachelor of SIC
+                            <br>IoT
+                        </p>
+                    </div>
+                </div>
+                <div class="text_conatiner" style="margin-top: 3rem;">
+                    <p>Lorem, ipsum dolor sit amet consectetur 
+                        adipisicing elit. Beatae odit numquam 
+                        quidem dolores nam. Tempora, fugiat 
+                        excepturi ullam, hic vel iste 
+                        distinctio, dolorum consequatur totam 
+                        dolor non consectetur nesciunt error.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow_container" style="display: flex; justify-content: flex-end; ">
+            <img src="./assets/logos/arrow.png" alt="arrow-icon"
+        class="icon arrow" onclick="location.href='./#Experience'"
+             />
+             
+        </div>
+    </section>
+    <section id="Experience">
+        <p class="section__text__p1" style="text-align: center;">Explore My</p>
+        <h1 style="text-align: center;">Experience</h1>
+        <div class="experience_details_container">
+            <div class="about_container" style="margin: 0 auto; width: 80%;">
+                <div class="exp_container">
+                    <h2 class="experience_sub_title">Frontend Development</h2>
+                    <div class="article_container">
+                        <article>
+                            <img 
+                                 src="./assets/logos/tick.png"
+                                 alt="tick"
+                                 class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img 
+                                 src="./assets/logos/tick.png"
+                                 alt="tick"
+                                 class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img 
+                                 src="./assets/logos/tick.png"
+                                 alt="tick"
+                                 class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img 
+                                 src="./assets/logos/tick.png"
+                                 alt="tick"
+                                 class="icon"
+                            />
+                            <div>
+                                <h3>UI Design</h3>
+                                <p>Intermediate</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img 
+                                 src="./assets/logos/tick.png"
+                                 alt="tick"
+                                 class="icon"
+                            />
+                            <div>
+                                <h3>Tailwind</h3>
+                                <p>Basic</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img 
+                                 src="./assets/logos/tick.png"
+                                 alt="tick"
+                                 class="icon"
+                            />
+                            <div>
+                                <h3>React</h3>
+                                <p>Basic</p>
+                            </div>     
+                        </article>
+                    </div>
+                </div>
+                <div class="exp_container">
+                    <h2 class="experience_sub_title">Backend Development</h2>
+                    <div class="article_container">
+                        <article>
+                            <img 
+                                 src="./assets/logos/tick.png"
+                                 alt="tick"
+                                 class="icon"
+                            />
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Intermediate</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img 
+                                 src="./assets/logos/tick.png"
+                                 alt="tick"
+                                 class="icon"
+                            />
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Basic</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img 
+                                 src="./assets/logos/tick.png"
+                                 alt="tick"
+                                 class="icon"
+                            />
+                            <div>
+                                <h3>Postgress</h3>
+                                <p>Basic</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img 
+                                 src="./assets/logos/tick.png"
+                                 alt="tick"
+                                 class="icon"
+                            />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img 
+                                 src="./assets/logos/tick.png"
+                                 alt="tick"
+                                 class="icon"
+                            />
+                            <div>
+                                <h3>MongoDB</h3>
+                                <p>Basic</p>
+                            </div>     
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow_container" style="display: flex; justify-content: flex-end;">
+            <img src="./assets/logos/arrow.png" alt="arrow-icon"
+        class="icon arrow" onclick="location.href='./#Projects'"
+             />
+        </div>
+    </section>
+    <section id="Projects">
+        <p class="section__text__p1" style="text-align: center;">Browse My Recent</p>
+        <h1 class="title" style="text-align: center; ">Projects</h1>
+        <div class="experience_details_container" style="text-align: center; display: flex; width: 80%; margin: 0 auto; gap:3rem;">
+            <div class="details_container color_container" style="border:1px solid rgb(53, 53, 53) ; ">
+                <div class="article_container" style="text-align:center; margin:  0 auto; ">
+                    <img 
+                       src="./assets/images/a6.jpg" 
+                       alt="Project 1"
+                       class="project_img"
+                       style="width: 60%; height: auto; margin: 0 auto;"
+                    />
+                </div>
+                <h2 class="experience_sub_title">Project 1</h2>
+                <div class="btn_container">
+                    <button
+                       class="btn btn_color_2 project_btn"
+                       onclick="location.href='https://https://github.com/collinsstevo79-code/Portfolio-Website.git'">
+                       Github
+                    </button>
+                    <button
+                       class="btn btn_color_2 project_btn"
+                       onclick="location.href='https://https://github.com/collinsstevo79-code/Portfolio-Website.git'">
+                       Live Demo
+                    </button>
+                </div>
+                
+            </div>
+            <div class="details_container color_container" style="border:1px solid rgb(53, 53, 53) ;  ">
+                <div class="article_container" style="text-align:center; margin:  0 auto; ">
+                    <img 
+                       src="./assets/images/a5.jpg" 
+                       alt="Project 1"
+                       class="project_img"
+                       style="width: 60%; height: auto; margin: 0 auto;"
+                    />
+                </div>
+                <h2 class="experience_sub_title">Project 2</h2>
+                <div class="btn_container">
+                    <button
+                       class="btn btn_color_2 project_btn"
+                       onclick="location.href='https://https://github.com/collinsstevo79-code/Portfolio-Website.git'">
+                       Github
+                    </button>
+                    <button
+                       class="btn btn_color_2 project_btn"
+                       onclick="location.href='https://https://github.com/collinsstevo79-code/Portfolio-Website.git'">
+                       Live Demo
+                    </button>
+                </div>
+                
+            </div>
+            <div class="details_container color_container" style="border:1px solid rgb(53, 53, 53) ; ">
+                <div class="article_container" style="text-align:center; margin:  0 auto; ">
+                    <img 
+                       src="./assets/images/a4.jpg" 
+                       alt="Project 1"
+                       class="project_img"
+                       style="width: 60%; height: auto; margin: 0 auto;"
+                    />
+                </div>
+                <h2 class="experience_sub_title">Project 3</h2>
+                <div class="btn_container">
+                    <button
+                       class="btn btn_color_2 project_btn"
+                       onclick="location.href='https://https://github.com/collinsstevo79-code/Portfolio-Website.git'">
+                       Github
+                    </button>
+                    <button
+                       class="btn btn_color_2 project_btn"
+                       onclick="location.href='https://https://github.com/collinsstevo79-code/Portfolio-Website.git'">
+                       Live Demo
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <div class="arrow_container" style="display: flex; justify-content: flex-end;">
+            <img src="./assets/logos/arrow.png" alt="arrow-icon"
+        class="icon arrow" onclick="location.href='./#contact'"
+             />
+        </div>
+    <section id="contact">
+        <p class="section__text__p1" style="text-align: center;">Get in Touch</p>
+        <h1 style="text-align: center;">Contact me</h1>
+        <div class="contact_info_upper_container">
+            <div class="contact_info_container">
+                <img 
+                   src="./assets/logos/what.png" 
+                   alt="contact icon"
+                   class="icon"
+                />
+                <p><a href="mailto:collinsstevo79@gmail.com">collinsstevo79@gmail.com</a></p>
+            </div>
+            <div class="contact_info_container">
+                <img 
+                   src="./assets/logos/in.png" 
+                   alt="instagram_icon"
+                   class="icon"
+                />
+                <p><a href="https://instagram.com/designwithco7" target="_blank" rel="noopener noreferrer">My instagram</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav class="footer_nav">
+            <div class="nav_logo">
+                <ul class="nav_links">
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#Experience">Experience</a></li>
+                     <li><a href="#Projects">Projects</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>   
+        </nav>
+        <p>Copyright &#169; 2023 John Doe. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>  
+</body>
+</html>
