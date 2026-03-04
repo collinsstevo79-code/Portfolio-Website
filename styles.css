@@ -88,6 +88,7 @@ a:hover {
 
 .nav_logo {
     font-size: 3rem;
+    
 }
 
 .nav_logo:hover {
@@ -99,10 +100,11 @@ a:hover {
 
 #hamburger_nav {
     display: none;
+    position: relative;
 }
 
 .hamburger_menu {
-    position: relative;
+    
     display: inline-block;
 }
 
@@ -110,6 +112,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    
     height: 24px;
     width: 30px;
     cursor: pointer;
@@ -127,25 +131,30 @@ a:hover {
     position: absolute;
     overflow: hidden;
     right: 0;
+    color: white;
     top: 100%;
-    transition: all 1.3s ease;
-    width: fit-content;
+    
+    transition: all 1.3s ease-in;
+    width: 100dvw;
     max-height: 0;
-    background-color: white;
+    background-color: rgb(53 ,53 ,53);
 }
 
 .hamburger_menulinks a{
     display: block;
-    padding: 10px;
-    color: black;
-    transition: all 1.2s ease;
+    padding: 2rem;
+    color: white;
+    transition: all 1s ease;
     font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
 }
-
+.hamburger_menulinks a:hover{
+    background-color: black;
+    
+}
 .hamburger_menulinks.open {
-    max-height: 300px;
+    max-height: 400px;
 
 }
 
